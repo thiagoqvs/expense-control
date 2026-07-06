@@ -105,9 +105,9 @@ backend em `http://localhost:5000` (CORS liberado apenas para essa origem).
 | POST   | `/api/transacoes`    | Cria uma transação (`{ descricao, valor, tipo, pessoaId }`) |
 | GET    | `/api/totais`        | Retorna totais por pessoa + total geral       |
 
-👤 Autor
-Thiago - Data Engineering Journey
+## Autor
 
-GitHub: @thiagoqvs
+**Thiago Victorino**
 
-LinkedIn: Thiago Victorino
+- GitHub: [github.com/thiagoqvs](https://github.com/thiagoqvs)
+- LinkedIn: [linkedin.com/in/thiagoqvictorino](https://linkedin.com/in/thiagoqvictorino)
