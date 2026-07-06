@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #1f2937;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 1.05rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  min-width: 140px;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-perigo {
+  background: #dc2626;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.lista li:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  margin-left: 8px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.erro {
+  color: #dc2626;
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+}
+
+.erro-conexao {
+  border-color: #dc2626;
+}
+
+.dica {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.aviso {
+  color: #92400e;
+  font-size: 0.85rem;
+  margin: 8px 0 0;
+}
+
+.vazio {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.receita {
+  color: #059669;
+}
+
+.despesa {
+  color: #dc2626;
+}
+
+.tabela-totais {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-totais th,
+.tabela-totais td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tabela-totais tfoot td {
+  border-top: 2px solid #d1d5db;
+  border-bottom: none;
+}
