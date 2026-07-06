@@ -109,4 +109,5 @@ backend em `http://localhost:5000` (CORS liberado apenas para essa origem).
 Thiago - Data Engineering Journey
 
 GitHub: @thiagoqvs
+
 LinkedIn: Thiago Victorino
