@@ -87,7 +87,7 @@ backend em `http://localhost:5000` (CORS liberado apenas para essa origem).
 - **Persistência em JSON** em vez de banco de dados: mantém a solução rodando em
   qualquer máquina sem dependências externas, ao mesmo tempo que cumpre o requisito de
   persistência entre execuções. O acesso aos arquivos é protegido por lock para evitar
-  condição de corrida.
+  race condition.
 - **DTOs separados dos modelos de domínio**, para não expor detalhes internos na API e
   deixar claro o contrato de entrada/saída de cada endpoint.
 - **Validação de regras de negócio na camada de serviço**, não nos controllers nem no
