@@ -15,10 +15,7 @@ public class TotaisController : ControllerBase
         _service = service;
     }
 
-    /// <summary>
-    /// GET /api/totais — retorna o total de receitas, despesas e saldo de cada
-    /// pessoa, além do total geral consolidado de todas as pessoas.
-    /// </summary>
+    
     [HttpGet]
     public ActionResult<ConsultaTotaisDto> Consultar()
     {
