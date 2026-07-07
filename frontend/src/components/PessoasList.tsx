@@ -5,10 +5,7 @@ interface Props {
   onDeletar: (id: string) => Promise<void>;
 }
 
-/**
- * Lista as pessoas cadastradas. Ao deletar, o backend também remove
- * (em cascata) todas as transações vinculadas a essa pessoa.
- */
+
 export function PessoasList({ pessoas, onDeletar }: Props) {
   return (
     <div className="card">
