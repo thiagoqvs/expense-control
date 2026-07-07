@@ -1,4 +1,3 @@
-// Tipos espelhando os DTOs do backend (.NET)
 
 export interface Pessoa {
   id: string;
