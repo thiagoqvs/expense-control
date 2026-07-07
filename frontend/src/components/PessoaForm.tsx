@@ -4,10 +4,7 @@ interface Props {
   onCriar: (nome: string, idade: number) => Promise<void>;
 }
 
-/**
- * Formulário de cadastro de pessoa: nome + idade.
- * O Id não aparece aqui porque é gerado automaticamente pelo backend.
- */
+
 export function PessoaForm({ onCriar }: Props) {
   const [nome, setNome] = useState("");
   const [idade, setIdade] = useState("");
