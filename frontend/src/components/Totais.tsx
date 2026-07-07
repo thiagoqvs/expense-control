@@ -8,10 +8,7 @@ function formatarMoeda(valor: number) {
   return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
 
-/**
- * Exibe o total de receitas, despesas e saldo de cada pessoa,
- * seguido do total geral (soma de todas as pessoas).
- */
+
 export function Totais({ totais }: Props) {
   if (!totais) return null;
 
