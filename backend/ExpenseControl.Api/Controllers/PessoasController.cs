@@ -15,14 +15,12 @@ public class PessoasController : ControllerBase
         _service = service;
     }
 
-    /// <summary>GET /api/pessoas — lista todas as pessoas cadastradas.</summary>
     [HttpGet]
     public ActionResult<List<PessoaDto>> Listar()
     {
         return Ok(_service.Listar());
     }
 
-    /// <summary>POST /api/pessoas — cadastra uma nova pessoa.</summary>
     [HttpPost]
     public ActionResult<PessoaDto> Criar([FromBody] CriarPessoaDto dto)
     {
@@ -37,10 +35,7 @@ public class PessoasController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// DELETE /api/pessoas/{id} — remove a pessoa e, em cascata,
-    /// todas as transações vinculadas a ela.
-    /// </summary>
+    
     [HttpDelete("{id:guid}")]
     public IActionResult Deletar(Guid id)
     {
