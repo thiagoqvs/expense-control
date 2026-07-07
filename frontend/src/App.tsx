@@ -7,12 +7,7 @@ import { TransacaoForm } from "./components/TransacaoForm";
 import { TransacoesList } from "./components/TransacoesList";
 import { Totais } from "./components/Totais";
 
-/**
- * Componente raiz: carrega os dados do backend e distribui para os
- * componentes de cadastro/listagem/totais. Toda mutação (criar pessoa,
- * criar transação, deletar pessoa) recarrega os dados para manter a
- * tela sempre consistente com o que está persistido no backend.
- */
+
 export default function App() {
   const [pessoas, setPessoas] = useState<Pessoa[]>([]);
   const [transacoes, setTransacoes] = useState<Transacao[]>([]);
