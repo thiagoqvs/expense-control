@@ -3,20 +3,17 @@ using ExpenseControl.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ---------- Serviços ----------
-// AddJsonOptions garante que o enum TipoTransacao seja aceito/devolvido como
-// texto ("Despesa"/"Receita") no JSON da API, em vez de número (0/1).
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
     });
 
-// Camada de persistência em JSON (singleton: os dados vivem em disco,
-// então só precisamos de uma instância cuidando dos arquivos)
+
 builder.Services.AddSingleton<JsonDataStore>();
 
-// Serviços de domínio
+
 builder.Services.AddScoped<PessoaService>();
 builder.Services.AddScoped<TransacaoService>();
 builder.Services.AddScoped<TotaisService>();
