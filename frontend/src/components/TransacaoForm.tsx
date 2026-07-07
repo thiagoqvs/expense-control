@@ -6,11 +6,7 @@ interface Props {
   onCriar: (descricao: string, valor: number, tipo: TipoTransacao, pessoaId: string) => Promise<void>;
 }
 
-/**
- * Formulário de cadastro de transação. Se a pessoa selecionada for menor
- * de idade, a opção "Receita" é desabilitada no próprio front, além da
- * validação (definitiva) que o backend faz.
- */
+
 export function TransacaoForm({ pessoas, onCriar }: Props) {
   const [descricao, setDescricao] = useState("");
   const [valor, setValor] = useState("");
