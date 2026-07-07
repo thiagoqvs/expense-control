@@ -9,7 +9,6 @@ function formatarMoeda(valor: number) {
   return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
 
-/** Lista todas as transações cadastradas, mostrando o nome da pessoa (não só o id). */
 export function TransacoesList({ transacoes, pessoas }: Props) {
   function nomeDaPessoa(pessoaId: string) {
     return pessoas.find((p) => p.id === pessoaId)?.nome ?? "(pessoa removida)";
