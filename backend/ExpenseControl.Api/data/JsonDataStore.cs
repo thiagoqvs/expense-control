@@ -3,16 +3,7 @@ using ExpenseControl.Api.Models;
 
 namespace ExpenseControl.Api.Data;
 
-/// <summary>
-/// Responsável por ler e gravar os dados em arquivos JSON no disco,
-/// garantindo que as informações persistam entre execuções da aplicação
-/// (requisito do desafio: "os dados devem persistir após fechar a aplicação").
-///
-/// Optamos por arquivos JSON (em vez de um banco de dados) para manter a
-/// solução simples de rodar em qualquer máquina, sem dependências externas
-/// (não precisa instalar SQL Server/Postgres etc). Todo o acesso é protegido
-/// por um lock para evitar condição de corrida entre requisições concorrentes.
-/// </summary>
+
 public class JsonDataStore
 {
     private readonly string _pessoasPath;
