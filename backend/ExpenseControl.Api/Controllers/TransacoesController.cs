@@ -15,17 +15,13 @@ public class TransacoesController : ControllerBase
         _service = service;
     }
 
-    /// <summary>GET /api/transacoes — lista todas as transações cadastradas.</summary>
     [HttpGet]
     public ActionResult<List<TransacaoDto>> Listar()
     {
         return Ok(_service.Listar());
     }
 
-    /// <summary>
-    /// POST /api/transacoes — cadastra uma nova transação.
-    /// Valida: pessoa existente e regra de menor de idade (só despesa).
-    /// </summary>
+    
     [HttpPost]
     public ActionResult<TransacaoDto> Criar([FromBody] CriarTransacaoDto dto)
     {
